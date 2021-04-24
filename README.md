@@ -7,8 +7,11 @@
 ### Run Server
 ``` python manage.py runserver ```
 
-### For Created Default DB Tables
+### Creating Default DB Tables
 ```python manage.py migrate``` 
 
-### For Created Super User
+### Creating Super User
 ```python manage.py createsuperuser```
+
+### Creating App
+```python manage.py startapp "app-name"```
