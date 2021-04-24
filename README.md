@@ -9,3 +9,6 @@
 
 ### For Created Default DB Tables
 ```python manage.py migrate``` 
+
+### For Created Super User
+```python manage.py createsuperuser```
