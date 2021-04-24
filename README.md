@@ -14,4 +14,4 @@
 ```python manage.py createsuperuser```
 
 ### Creating App
-```python manage.py startapp "app-name"```
+```python manage.py startapp "app-name"``` than dont forget to save into **INSTALLED_APPS**
