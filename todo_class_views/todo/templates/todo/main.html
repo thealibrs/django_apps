@@ -1,0 +1,18 @@
+{% if request.user.is_authenticated %}
+    <h3>{{request.user}}</h3>
+    <a href="{% url 'logout_page' %} ">Logout</a>
+{% else %}
+    <a href="{% url 'login_page' %} ">Login</a>
+{%endif%}
+<hr>
+<h1>To Do App</h1>
+<a href="{% url 'task_create_page' %}">Create Task</a>
+
+<div class="tasks">
+    {% for task in tasks %}
+        <h3>{{task.title}} </h3>
+        <a href="{% url 'task_detail_page' task.id %}">View</a>
+        <a href="{% url 'task_edit_page' task.id %}">Edit</a>
+        <a href="{% url 'task_delete_page' task.id %}">Delete</a>
+    {% endfor%}
+</div>
